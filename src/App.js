@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Cake from './components/Cake/Cake.js';
+import data from './data';
 
 function App() {
+  const cakeData = data.map(item => {
+    return (
+      <Cake
+        key={item.id}
+        title={item.title}
+        imgSrc={item.imgSrc}
+        description={item.description}
+        alt={item.alt}
+
+
+      />
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 className="main-title" >Meet the Cakes!</h2>
+      <div className="cake-container">
+
+
+        {cakeData}
+
+
+      </div>
+
+
     </div>
   );
 }

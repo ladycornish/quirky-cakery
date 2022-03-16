@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cake {
+display: flex;
+flex-direction: column;
+width: 18rem;
+margin: 20px;
+text-align: center;
+background: var(--silver-pink)
+}
+
+.image-container {
+height: 22rem;
+border: 10px solid var(--silver-pink);
+border-radius: 5px;
+}
+
+.cake-title {
+font-size: 1.2rem;
+font-weight: 700;
+padding: 20px 0;
+color: var(--dark-slate);
+font-family: 'Playfair Display', serif;
+font-size: 1.4rem;
+}
+
+.cake-img{
+    max-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cake-description {
+font-size: 1rem;
+font-weight: 400;
+padding: 0 10px 10px 10px;
+}

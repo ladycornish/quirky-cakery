@@ -1,13 +1,124 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style-type: none;
+  --melon: #F0A69Cff;
+--misty-rose: #FDE2DFff;
+--silver-pink: #D4B3BBff;
+--cornsilk: #FCF2DAff;
+--tan-crayola: #E2A477ff;
+--dark-slate: #2C423F;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Open Sans', sans-serif, 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
+
+img {
+  max-width: 100%;
+}
+
+/* Navbar Section */
+
+.top-banner {
+  width: 100vw;
+  height: 50px;
+  background-color: var(--misty-rose);
+}
+
+.navbar {
+  background: url('../public/images/pink-icing.jpg');
+  background-size:cover;
+  background-position: left center;
+  display: flex;
+  width: 100vw;
+  padding: 10px;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.nav-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--misty-rose);
+  padding-left: 10px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.list-item {
+  margin-left: 10px;
+  padding: 2px 4px;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all .5s linear;
+}
+
+.list-item:hover {
+  color: var(--melon);
+  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  
+}
+
+/* End of Navbar */
+
+
+
+.nav-title {
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color: var(--misty-rose);
+  text-shadow: 1px 1px 1px var(--dark-slate);
+}
+
+/* Hero Section */
+
+.hero-section {
+  width: 100vw;
+  height: 50%;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  max-height: 90%;
+  width: auto;
+  border-radius: 5px;
+  border: 5px solid var(--tan-crayola);
+}
+
+.hero-main {
+  max-width: 500px;
+  margin: 0 30px;
+}
+
+
+.hero-text {
+  color:#2C423F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
