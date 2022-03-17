@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Quirky cakery shows off unusual bespoke cake decorations all handmade. Here is thje Christmas category." />
+    <title>Misc Category</title>
+</head>
+<body>
+    <div class="top-banner">
+        <div><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt=""></div>
+        <div></div>
+        <a title="Mail Me" href="mailto:mel@ladycornish.com"><i class="fa-regular fa-envelope link"></i></a>
+        <a title="Follow Me" href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+    </div>
+      </div>
+    <nav class="navbar">
+
+        <h1 class="nav-title">Quirky Cakery</h1>
+        
+        <ul class="nav-list">
+            <a class="list-item" href="./index.html"><li >Home</li></a>
+            <a href="./my-cakes.html" class="list-item"><li>My Cakes</li></a>
+            <a href="./enquiry.html" class="list-item"><li>Enquiry</li></a>
+            <a href="./misc.html" class="list-item"><li>About</li></a>
+        </ul>
+        
+    </nav>
+    <h1 class="category-title">And The Random!</h1>
+          <section class="intro">
+              <p>From birthdays to Engagements, even a hen do, I can create whatever theme is in your mind! We are only limited by our imagination after all.</p>
+              
+            
+            
+          </section>
+
+          <section class="cake-section">
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/engagement.jpeg" onClick="openLightbox(this)" alt="home alone">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Happy Engagement!</h3>
+                    <p class="cake-description">Time for a sensible one with a request from my eldest step-daughter to create their engagement cake. </p> 
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/snorkel.jpeg" onClick="openLightbox(this)" alt="dead santa">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Happy Birthday!</h3>
+                    <p class="cake-description">When my husband was turning 50 I knew this was once again a time to get creative. I had him snorkelling (his favourite thing to do on holiday). But whilst being chased by a shark! Will he make it to the island?</p>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/magic-mike.jpeg" onClick="openLightbox(this)" alt="rudolph is tied up around a camp fire">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Magic Mike & His Pole</h3>
+                    <p class="cake-description">Can't actually attend your hen do due to Covid? I'll create it for you. Although Mike hadn't kept himself in shape....he loved eating in lockdown!</p>
+                </div>
+            </div>
+            
+
+              <!--See more Section-->
+
+<section class="more-section">     
+    <div class="more-container">
+          <h4 class="more-title">See more of My Cakes!</h4>
+          <a href="./my-cakes.html"><img class="more-img" src="../images/quirky-cakery-logo.PNG" alt="more cakes"></a>
+      </div>
+  </section>
+
+            
+
+            
+
+          </section>
+
+          <!-- Actual Lightbox -->
+<div id="lightbox" class="hidden lightbox">
+    <div onClick="closeLightbox()" class="close">❌</div>
+    <div class="lightbox-content">
+      <img id="lightbox-image" />
+    </div>
+  </div>
+    
+ <!--Footer-->
+
+ <footer class="footer">
+    
+    <a href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+    <p class="footer-text">Made with &#x2764; by &copy;<a class="lady-link">LadyCornish</a> Web Design</p>
+  
+</footer>
+
+
+
+
+
+<script>
+
+const lightbox = document.getElementById('lightbox');
+const lightboxHolder = document.getElementById('lightbox-image');
+
+openLightbox = (element) => {
+  lightboxHolder.src = element.src;
+  lightbox.classList.remove('hidden');
+};
+
+closeLightbox = () => lightbox.classList.add('hidden');
+
+</script>
+    
+</body>
+</html>

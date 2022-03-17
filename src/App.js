@@ -12,12 +12,13 @@ function App() {
         imgSrc={item.imgSrc}
         category={item.category}
         alt={item.alt}
+        linkSrc={item.linkSrc}
       />
     )
   })
   return (
     <div className="App">
-      <h2 className="main-title" >What's the Occassion?</h2>
+      <h2 className="main-title" >What's the Occasion?</h2>
       <div className="cake-container">
 
 

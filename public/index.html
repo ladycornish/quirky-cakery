@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Quirky cakery shows off unusual bespoke cakes all handmade" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -30,17 +30,22 @@
 <body>
   <!-- Navigation Section-->
   <div class="top-banner">
-    <i class="fa-regular fa-envelope"></i>
-    <i class="fa-brands fa-instagram"></i>
+    <div><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt="">
+      </div>
+    <div>
+    <a title="Mail Me" href="mailto:mel@ladycornish.com"><i class="fa-regular fa-envelope link"></i></a>
+    <a title="Follow Me" href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+    </div>
   </div>
   <nav class="navbar">
 
     <h1 class="nav-title">Quirky Cakery</h1>
 
     <ul class="nav-list">
-      <li class="list-item">Home</li>
-      <li class="list-item">Cakes</li>
-      <li class="list-item">About</li>
+      <a href="" class="list-item"><li class="list-item">Home</li></a>
+      <a href="/pages/my-cakes.html" class="list-item"><li class="list-item">My Cakes</li></a>
+      <a href="/pages/enquiry.html" class="list-item"><li>Enquiry</li></a>
+      <a href="/pages/about.html" class="list-item"><li class="list-item">About</li></a>
     </ul>
 
   </nav>
@@ -66,7 +71,7 @@
   <!--Latest Cake Section-->
 
   <section class="latest-cake">
-    <h2 class="latest-title">Latest Cake</h2>
+    <h2 class="latest-title">Latest Creation!</h2>
     <div class="latest-container">
       <div class="latest-left-box">
         <h3 class="cake-name">'Home Alone'</h3>
@@ -74,7 +79,7 @@
       </div>
 
       <div class="latest-right-box">
-        <img class="latest-img" src="/images/home-alone.jpeg" alt="where is my photo?">
+        <img class="latest-img" src="../images/home-alone.jpeg" alt="where is my photo?">
       </div>
     </div>
   </section>
@@ -82,9 +87,7 @@
   <!-- Blank Section Number 2-->
   <div class="div-0"></div>
   <div class="div-1"></div>
-  <a href="./christmas.html"><p>Click here</p></a>
   <div class="div-2"></div>
-  
   <div class="div-3"></div>
   
 
@@ -106,15 +109,22 @@
 
     -->
 
+     <!--See more Section-->
+
+<section class="more-section">     
+  <div class="more-container">
+        <h4 class="more-title">See more of My Cakes!</h4>
+        <a href="./my-cakes.html"><img class="more-img" src="../images/quirky-cakery-logo.PNG" alt="more cakes"></a>
+    </div>
+</section>
+
   <!--Footer-->
 
-  <footer>
-    <div>
-      <div>
-
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
+  <footer class="footer">
+    
+      <a href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+      <p class="footer-text">Made with &#x2764; by &copy;<a class="lady-link">LadyCornish</a> Web Design</p>
+    
   </footer>
 </body>
 

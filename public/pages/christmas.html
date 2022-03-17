@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Quirky cakery shows off unusual bespoke cake decorations all handmade. Here is thje Christmas category." />
+    <title>Christmas Category</title>
+</head>
+<body>
+    <div class="top-banner">
+        <div><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt=""><img class="svg" src="../images/cake.svg" alt=""></div>
+        <div>
+        <a title="Mail Me" href="mailto:mel@ladycornish.com"><i class="fa-regular fa-envelope link"></i></a>
+        <a title="Follow Me" href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+        </div>div>
+      </div>
+    <nav class="navbar">
+
+        <h1 class="nav-title">Quirky Cakery</h1>
+        
+        <ul class="nav-list">
+            <a class="list-item" href="./index.html"><li >Home</li></a>
+            <a href="./my-cakes.html" class="list-item"><li>My Cakes</li></a>
+            <a href="./enquiry.html" class="list-item"><li>Enquiry</li></a>
+            <a href="./about.html" class="list-item"><li>About</li></a>
+        </ul>
+        
+    </nav>
+    <h1 class="category-title">It's Christmas....!</h1>
+          <section class="intro">
+              <p>Every year I make a traditional cake for the family at Christmas time. This is where my love of cake decorating started and I look forward to it all year. I put a Christmas film on and take my time creating something fun. </p>
+            <br>
+            <p>A cake should be a wow factor, especially at Christmas. However after a while I was getting a bit bored of the usual toppings, so I began doing the <em>unusual</em>, much to the horror at times of my family.....as you will see!</p>
+            
+          </section>
+
+          <section class="cake-section">
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/home-alone.jpeg" alt="home alone">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Home Alone</h3>
+                    <p class="cake-description">What is better than creating your favourite Christmas film out of fondant?</p> 
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/kidnap-rudolph.jpeg" onClick="openLightbox(this)" alt="dead santa">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Rudolph's on the Menu!</h3>
+                    <p class="cake-description">Evil elf is up to no good again, what does he have in store for Rudolph?</p>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/stolen-sleigh.jpeg" onClick="openLightbox(this)" alt="rudolph is tied up around a camp fire">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">TWOC'd Sleigh!</h3>
+                    <p class="cake-description">'Taken Without Consent' Evil Elf is up to no good!</p>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/angel-cake.jpeg" onClick="openLightbox(this)" alt="a fat angel made of fondant">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Who Eat All The Pies?</h3>
+                    <p class="cake-description">The Angel has a sweet tooth and has stuffed her face!</p>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/bank-robbing.JPG" onClick="openLightbox(this)" alt="robins dressed as robbers with coins around them">
+                </div> 
+                <div class="text-div">
+                    <h3 class="cake-title">Bank Robbin' Robins!</h3>
+                    <p class="cake-description">They may look innocent but these robins are theives!</p>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="img-div">
+                    <img src="../images/santa-stuck.JPG" onClick="openLightbox(this)"  alt="santa stuck upside down in chimney">
+                </div>
+                <div class="text-div">
+                    <h3 class="cake-title">Santa Stuck in Chimney</h3>
+                    <p class="cake-description">Someone enjoyed themselves at Christmas didnt they!</p>
+                </div>
+            </div>
+
+          </section>
+
+          <!-- Actual Lightbox -->
+<div id="lightbox" class="hidden lightbox">
+    <div onClick="closeLightbox()" class="close">❌</div>
+    <div class="lightbox-content">
+      <img id="lightbox-image" />
+    </div>
+  </div>
+
+  <!--See more Section-->
+
+<section class="more-section">     
+    <div class="more-container">
+          <h4 class="more-title">See more of My Cakes!</h4>
+          <a href="./my-cakes.html"><img class="more-img" src="../images/quirky-cakery-logo.PNG" alt="more cakes"></a>
+      </div>
+  </section>
+    
+ <!--Footer-->
+
+ <footer class="footer">
+    
+    <a href="https://www.instagram.com/quirky_cakery/"><i class="fa-brands fa-instagram link"></i></a>
+    <p class="footer-text">Made with &#x2764; by &copy;<a class="lady-link">LadyCornish</a> Web Design</p>
+  
+</footer>
+
+
+
+
+
+<script>
+
+const lightbox = document.getElementById('lightbox');
+const lightboxHolder = document.getElementById('lightbox-image');
+
+openLightbox = (element) => {
+  lightboxHolder.src = element.src;
+  lightbox.classList.remove('hidden');
+};
+
+closeLightbox = () => lightbox.classList.add('hidden');
+
+</script>
+    
+</body>
+</html>

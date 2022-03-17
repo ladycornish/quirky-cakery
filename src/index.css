@@ -28,21 +28,31 @@ img {
 
 .top-banner {
   width: 100vw;
-  height: 50px;
+  height: 60px;
   background-color: var(--queen-pink);
   color: #fff;
   padding: 0 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.top-banner > i {
+
+.svg {
+  width: 35px;
+  height: 35px;
+  opacity: .5;
+  margin-right: 10px;
+}
+
+.link {
   font-size: 20px;
   padding-left: 10px;
   cursor: pointer;
+  color: #fff;
 }
-.top-banner > i:hover {
+
+.link:hover {
   color: var(--cinnamon-satin);
 }
 
@@ -80,6 +90,8 @@ img {
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.5s linear;
+  text-decoration: none;
+  ;
 }
 
 .list-item:hover {
@@ -149,14 +161,14 @@ img {
 /* Latest Cake Section */
 
 .latest-cake {
-  width: 90vw;
-  height: 530px;
-  margin: 40px auto;
+  width: 100vw;
+  height: 500px;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
-  border-top: 1px solid var(--lilac-luster);
+  justify-content: center;
+  padding: 20px;
 }
 
 .latest-title {
@@ -168,27 +180,22 @@ img {
 }
 
 .latest-container {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .latest-left-box {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  flex-direction: column;
+  height: 60%;
 }
 
 .cake-name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--cinnamon-satin);
 }
 
@@ -201,7 +208,6 @@ img {
   outline: 2px solid var(--cinnamon-satin);
   background-color: var(--cinnamon-satin);
   border-radius: 10px;
-  align-self: flex-end;
   cursor: pointer;
 }
 
@@ -213,9 +219,7 @@ img {
 }
 
 .latest-right-box {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  margin-top: auto;
 }
 
 .latest-img {
@@ -238,7 +242,7 @@ img {
 }
 
 .div-2 {
-  height:7px;
+  height: 7px;
   background: var(--ghost-white);
   margin-bottom: 5px;
 }
@@ -277,9 +281,11 @@ img {
     height: 100%;
     padding: 0 30px;
   }
+
   .hero-title {
     font-size: 1.5rem;
   }
+
   .latest-container {
     flex-direction: row;
     max-width: 600px;
@@ -289,15 +295,79 @@ img {
     width: 40%;
     justify-content: center;
   }
+
   .latest-right-box {
     width: 60%;
     align-items: center;
   }
+
   .latest-img {
     max-height: 400px;
   }
+
   .cake-name {
     font-size: 2.5rem;
     padding-bottom: 20px;
   }
+}
+
+/* more Section */
+
+.more-section {
+  width: 100vw;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.more-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--lilac-luster);
+}
+
+.more-title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.more-img {
+  height: 140px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  height: 60px;
+  width: 100vw;
+  background: var(--queen-pink);
+  color: #fff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  padding-left: 50px;
+  font-size: .88rem;
+}
+
+.lady-link {
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.lady-link:hover {
+  color: var(--cinnamon-satin);
 }
