@@ -1,25 +1,23 @@
 
 import './App.css';
 import Cake from './components/Cake/Cake.js';
-import data from './data';
+import {cakes} from './data';
 
 function App() {
-  const cakeData = data.map(item => {
+  const cakeData = cakes.map(item => {
     return (
       <Cake
         key={item.id}
         title={item.title}
         imgSrc={item.imgSrc}
-        description={item.description}
+        category={item.category}
         alt={item.alt}
-
-
       />
     )
   })
   return (
     <div className="App">
-      <h2 className="main-title" >Meet the Cakes!</h2>
+      <h2 className="main-title" >What's the Occassion?</h2>
       <div className="cake-container">
 
 

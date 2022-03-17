@@ -1,17 +1,19 @@
 .App {
-  background-color: var(--misty-rose);
+  background-color: var(--ghost-white);
   min-height: 50vh;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  ;
 }
 
 .main-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--dark-slate);
+  color: var(--dark-liver);
   margin: 2rem 0;
 }
 
@@ -21,5 +23,3 @@
   align-items: flex-start;
   justify-content: center;
 }
-
-

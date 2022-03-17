@@ -5,37 +5,39 @@
 }
 
 .cake {
-display: flex;
-flex-direction: column;
-width: 18rem;
-margin: 20px;
-text-align: center;
-background: var(--silver-pink)
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 20px;
+    text-align: center;
+    padding: 22px 0;
+    background: #fff;
 }
 
 .image-container {
-height: 22rem;
-border: 10px solid var(--silver-pink);
-border-radius: 5px;
+    height: 22rem;
+    width: 18rem;
+    margin: 0 auto;
 }
 
 .cake-title {
-font-size: 1.2rem;
-font-weight: 700;
-padding: 20px 0;
-color: var(--dark-slate);
-font-family: 'Playfair Display', serif;
-font-size: 1.4rem;
+    font-weight: 700;
+    padding: 5px 0;
+    color: var(--dark-liver);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
 }
 
-.cake-img{
+.cake-img {
     max-height: 100%;
-    width: 100%;
-    border-radius: 10px;
+    border: 5px solid var(--queen-pink);
+    border-radius: 7px;
+
 }
 
 .cake-description {
-font-size: 1rem;
-font-weight: 400;
-padding: 0 10px 10px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open sans', sans-serif;
+
 }

@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  --melon: #F0A69Cff;
---misty-rose: #FDE2DFff;
---silver-pink: #D4B3BBff;
---cornsilk: #FCF2DAff;
---tan-crayola: #E2A477ff;
---dark-slate: #2C423F;
+  --queen-pink: #dcbac5ff;
+  --cinnamon-satin: #bb6f7bff;
+  --lilac-luster: #bfa5b0ff;
+  --ghost-white: #efeaeeff;
+  --dark-liver: #4e4a4fff;
+  --dark-slate: #6c757d;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif, 'Playfair Display', serif;
+  font-family: "Open Sans", sans-serif, "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
@@ -29,26 +29,41 @@ img {
 .top-banner {
   width: 100vw;
   height: 50px;
-  background-color: var(--misty-rose);
+  background-color: var(--queen-pink);
+  color: #fff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
+.top-banner > i {
+  font-size: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.top-banner > i:hover {
+  color: var(--cinnamon-satin);
+}
+
+
 .navbar {
-  background: url('../public/images/pink-icing.jpg');
-  background-size:cover;
-  background-position: left center;
   display: flex;
+  flex-direction: column;
   width: 100vw;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .nav-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--misty-rose);
-  padding-left: 10px;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+  color: var(--dark-liver);
+  font-weight: 500;
+  text-align: center;
 }
 
 .nav-list {
@@ -59,66 +74,230 @@ img {
   margin-left: 10px;
   padding: 2px 4px;
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--lilac-luster);
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 0.5px;
-  transition: all .5s linear;
+  cursor: pointer;
+  transition: all 0.5s linear;
 }
 
 .list-item:hover {
-  color: var(--melon);
+  color: var(--cinnamon-satin);
   text-decoration: underline;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
-  
 }
 
 /* End of Navbar */
 
-
-
-.nav-title {
-  font-size: 5rem;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 15px;
-  color: var(--misty-rose);
-  text-shadow: 1px 1px 1px var(--dark-slate);
-}
-
 /* Hero Section */
-
-.hero-section {
-  width: 100vw;
-  height: 50%;
-  padding: 20px;
-}
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  align-items: center;
+  height: 600px;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.hero-img {
-  max-height: 90%;
-  width: auto;
-  border-radius: 5px;
-  border: 5px solid var(--tan-crayola);
+.img-section {
+  width: 100vw;
+  height: 50%;
+  background: url("../public/images/pink-icing.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  background-position: left center;
 }
 
-.hero-main {
-  max-width: 500px;
-  margin: 0 30px;
-}
-
-
-.hero-text {
-  color:#2C423F;
-  font-family: 'Open Sans', sans-serif;
+.text-section {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  color: #2c423f;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.15rem;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--ghost-white);
 }
 
+.hero-title {
+  font-size: 1.9rem;
+  font-family: "Playfair display", serif;
+  padding-bottom: 20px;
+  font-weight: 400;
+  color: var(--dark-liver);
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+/* End of Hero Section */
+.blank-break {
+  width: 100vw;
+  height: 80px;
+}
+
+/* Latest Cake Section */
+
+.latest-cake {
+  width: 90vw;
+  height: 530px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-top: 1px solid var(--lilac-luster);
+}
+
+.latest-title {
+  font-size: 2.6rem;
+  font-family: "Playfair display", serif;
+  padding-bottom: 15px;
+  font-weight: 400;
+  color: var(--dark-liver);
+}
+
+.latest-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.latest-left-box {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.cake-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--cinnamon-satin);
+}
+
+.featured-btn {
+  height: 30px;
+  width: 100px;
+  font-size: .88rem;
+  color: #fff;
+  border: 2px solid #fff;
+  outline: 2px solid var(--cinnamon-satin);
+  background-color: var(--cinnamon-satin);
+  border-radius: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.featured-btn:hover {
+  color: var(--cinnamon-satin);
+  border: 2px solid var(--cinnamon-satin);
+  outline: 2px solid #fff;
+  background-color: #fff;
+}
+
+.latest-right-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.latest-img {
+  border: 10px solid var(--ghost-white);
+  max-height: 300px;
+}
+
+/* second break section */
+
+.div-0 {
+  height: 2px;
+  background: var(--ghost-white);
+  margin-bottom: 5px;
+}
+
+.div-1 {
+  height: 5px;
+  background: var(--queen-pink);
+  margin-bottom: 5px;
+}
+
+.div-2 {
+  height:7px;
+  background: var(--ghost-white);
+  margin-bottom: 5px;
+}
+
+.div-3 {
+  height: 10px;
+  background: var(--queen-pink);
+  margin-bottom: 5px
+}
+
+/* category Section */
+
+/* see App.js */
+
+/* Media Queries */
+
+@media (min-width: 426px) {
+  .nav-title {
+    font-size: 5vw;
+  }
+
+  .container {
+    flex-direction: row;
+    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .img-section {
+    height: 100%;
+    width: 50%;
+  }
+
+  .text-section {
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .latest-container {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .latest-left-box {
+    width: 40%;
+    justify-content: center;
+  }
+  .latest-right-box {
+    width: 60%;
+    align-items: center;
+  }
+  .latest-img {
+    max-height: 400px;
+  }
+  .cake-name {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+}
